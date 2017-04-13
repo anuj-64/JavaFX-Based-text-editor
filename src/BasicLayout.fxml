@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.input.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="828.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <top>
+      <AnchorPane prefHeight="51.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <MenuBar prefHeight="25.0" prefWidth="600.0" AnchorPane.bottomAnchor="27.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <menus>
+                  <Menu mnemonicParsing="false" onMenuValidation="#filemenu" text="File">
+                     <items>
+                        <MenuItem fx:id="newfile" mnemonicParsing="false" onAction="#addnewtab" text="New File  ">
+                           <accelerator>
+                              <KeyCodeCombination alt="UP" code="N" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                           </accelerator></MenuItem>
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem mnemonicParsing="false" onAction="#open" text="Open File">
+                           <accelerator>
+                              <KeyCodeCombination alt="UP" code="O" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                           </accelerator></MenuItem>
+                        <Menu mnemonicParsing="false" text="Open Recent" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem fx:id="save" mnemonicParsing="false" onAction="#save" text="Save                     ">
+                           <accelerator>
+                              <KeyCodeCombination alt="UP" code="S" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                           </accelerator></MenuItem>
+                        <MenuItem fx:id="saveas" mnemonicParsing="false" onAction="#saveas" text="Save As">
+                           <accelerator>
+                              <KeyCodeCombination alt="UP" code="S" control="DOWN" meta="UP" shift="DOWN" shortcut="UP" />
+                           </accelerator></MenuItem>
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem mnemonicParsing="false" onAction="#close" text="Exit                      " />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" onMenuValidation="#editmenu" text="Edit">
+                     <items>
+                        <MenuItem fx:id="cut" mnemonicParsing="false" onAction="#cut" text="Cut">
+                           <accelerator>
+                              <KeyCodeCombination alt="UP" code="X" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                           </accelerator></MenuItem>
+                        <MenuItem fx:id="copy" mnemonicParsing="false" onAction="#copy" text="Copy">
+                           <accelerator>
+                              <KeyCodeCombination alt="UP" code="C" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                           </accelerator></MenuItem>
+                        <MenuItem fx:id="paste" mnemonicParsing="false" onAction="#paste" text="Paste">
+                           <accelerator>
+                              <KeyCodeCombination alt="UP" code="V" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                           </accelerator></MenuItem>
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" onMenuValidation="#viewmenu" text="View">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Navigator" />
+                        <MenuItem fx:id="full" mnemonicParsing="false" onAction="#fullscreen" text="Full Screen" />
+                        <MenuItem fx:id="exitfull" mnemonicParsing="false" onAction="#exitfullscreen" text="Exit Full Screen" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" onMenuValidation="#findmenu" text="Find">
+                     <items>
+                        <MenuItem fx:id="find" mnemonicParsing="false" onAction="#Find" text="Find" />
+                        <MenuItem fx:id="findPrevious" mnemonicParsing="false" onAction="#FindPrev" text="Find Previous" />
+                        <MenuItem fx:id="findAll" mnemonicParsing="false" onAction="#FindAll" text="Find All" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem fx:id="replace" mnemonicParsing="false" onAction="#Replace" text="Replace" />
+                        <MenuItem fx:id="replaceAll" mnemonicParsing="false" onAction="#ReplaceAll" text="Replace All" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Help">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Documentation" />
+                        <MenuItem mnemonicParsing="false" onAction="#about" text="About" />
+                     </items>
+                  </Menu>
+               </menus>
+            </MenuBar>
+            <HBox layoutY="23.0" prefHeight="29.0" prefWidth="600.0" style="-fx-border-color: black;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0">
+               <children>
+                  <AnchorPane prefHeight="27.0" prefWidth="601.0">
+                     <children>
+                        <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="29.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="25.0" prefWidth="109.0" text="Quick Access" AnchorPane.leftAnchor="29.0" AnchorPane.rightAnchor="350.0" AnchorPane.topAnchor="0.0" />
+                        <Button layoutX="126.0" layoutY="1.0" mnemonicParsing="false" onAction="#cmd" opacity="0.87" prefHeight="23.0" prefWidth="67.0" text="Open CMD">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </children></HBox>
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>

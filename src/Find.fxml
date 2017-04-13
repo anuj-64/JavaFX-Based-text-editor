@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="171.0" prefWidth="828.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+      <TextArea fx:id="textAreafind" layoutX="132.0" layoutY="28.0" prefHeight="33.0" prefWidth="307.0" />
+      <Button layoutX="703.0" layoutY="28.0" mnemonicParsing="false" onAction="#FindAll" prefHeight="33.0" prefWidth="111.0" text="Find All" textOverrun="CLIP" />
+      <Button layoutX="455.0" layoutY="69.0" mnemonicParsing="false" onAction="#Replace" prefHeight="33.0" prefWidth="111.0" text="Replace" />
+      <Button layoutX="455.0" layoutY="28.0" mnemonicParsing="false" onAction="#Find" prefHeight="33.0" prefWidth="111.0" text="Find" />
+      <Button layoutX="580.0" layoutY="28.0" mnemonicParsing="false" onAction="#FindPrev" prefHeight="33.0" prefWidth="111.0" text="Find Previous" />
+      <TextArea fx:id="textAreaRepalce" layoutX="132.0" layoutY="69.0" prefHeight="33.0" prefWidth="307.0" />
+      <Button layoutX="580.0" layoutY="69.0" mnemonicParsing="false" onAction="#ReplaceAll" prefHeight="33.0" prefWidth="111.0" text="Replace All" />
+      <Label layoutX="14.0" layoutY="28.0" prefHeight="33.0" prefWidth="79.0" text="Find:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="71.0" prefHeight="33.0" prefWidth="111.0" text="Replace With:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="703.0" layoutY="104.0" mnemonicParsing="false" onAction="#closeFind" prefHeight="33.0" prefWidth="111.0" text="CLOSE" />
+   </children>
+</AnchorPane>
