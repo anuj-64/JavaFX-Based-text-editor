@@ -13,7 +13,7 @@ Features
 * Based on JavaFX and use of Java Swing too.
 * highlight Syntax of Java(we would add syntax highliter for other langauges later but you can help us that section).
 * Just download and start using no installation required.
-* Lightwieghted
+* Lightweighted
 
 Technology used in Developing
 -----------------------------
