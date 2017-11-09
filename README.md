@@ -5,7 +5,7 @@ Introduction
 ------------
 
 This Editor is developed by us for personel use and later we thought that it can help others too.
-This is a light weighted **_JavaFX_** and **_JavaSwing_** Based text Editor. we are using it for writing codes. if anyone wants to use it just download  the
+This is a light weighted **_JavaFX_** and **_JavaSwing_** Based text Editor. we are using it for writing codes. if anyone wants to use it just download   the
 file from application folder(offcourse You can also download source code). It contain syntax highlighter for java(if you write code in java it will highlight syntax for you).
 
 Features
